@@ -1,0 +1,7 @@
+*.ckpt
+RAVDESS
+resources
+tuning_logs
+*.zip
+*.wav
+*pycache*
