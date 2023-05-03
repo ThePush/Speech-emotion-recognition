@@ -8,6 +8,7 @@
 
 -   Audio signal analysis through CNN/LSTM models
 -   A script using a pre-trained transformer model with a speech to text library
+<br>
 
 <div align="center">
   <center><h1>Audio signal analysis through CNN/LSTM models</h1></center>
@@ -37,7 +38,7 @@ We used the [librosa](https://librosa.org/) library to extract features from the
 -   Chroma frequencies<br>
 -   Mel-spectrogram<br>
 
-<librosa image>
+<img src="https://user-images.githubusercontent.com/91064070/235926461-bc649866-ee7f-4878-b292-7f6981c8d9c9.png"/>
 
 The features are then split in train/validation sets and saved into .npy files.
 
@@ -51,7 +52,7 @@ Several models were tried, replicating the ones we found in the literature. The 
 
 The models are composed of 5 to 8 convolutional layers, followed by Batch Normalization and max pooling at some points, according to the paper they were based on.<br>
 The output is then flattened and fed to a dense layer. The output of the dense layer is then fed to a softmax layer with the number of emotions as output.<br>
-The hybrid model adds 2 LSTM layers after the convolutional layers.<br>
+The hybrid model adds 2 LSTM layers between the convolutional layers and the dense layer.<br>
 You can check some of the models in the `models/model_plot` folder.
 
 We made a custom class with [keras-tuner](https://keras.io/keras_tuner/) to find the best hyperparameters for the CNN model. You can find it in the `/model_training/CNNHypermodel.py` file.
@@ -61,7 +62,8 @@ We made a custom class with [keras-tuner](https://keras.io/keras_tuner/) to find
   </div>
 
 Matrix confusion of the results of a CNN model trained on RAVDESS, excluding singing and calm emotions:
-<matrix image>
+
+<img src="https://user-images.githubusercontent.com/91064070/235926494-c18e0165-1f09-4049-888f-88b4ff37bba3.png"/>
 
 <div align="center">
   <center><h2>How to use it</h2></center>
@@ -96,6 +98,7 @@ $> python3 stats.py <model>
 -   data_extraction.py: extract features from dataset(s) and save x and y into .npy files
 
 -   merge_datasets.py: concatenate two datasets by axis 0 and saves them into .npy files
+<br>
 
 <div align="center">
   <center><h1>Speech to text (transformers model)</h1></center>
