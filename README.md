@@ -67,6 +67,12 @@ Matrix confusion of the results of a CNN model trained on RAVDESS, excluding sin
 <p align="center">
 <img src="https://user-images.githubusercontent.com/91064070/235926494-c18e0165-1f09-4049-888f-88b4ff37bba3.png"/>
 </p>
+<br>
+
+Accuracy of one of the CNN model on RAVDESS with 6 emotions:
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91064070/235938962-7ae2026f-74c4-4c07-82e6-74f30ed87110.png"/>
+</p>
 
 <div align="center">
   <center><h2>How to use it</h2></center>
