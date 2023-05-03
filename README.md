@@ -38,7 +38,9 @@ We used the [librosa](https://librosa.org/) library to extract features from the
 -   Chroma frequencies<br>
 -   Mel-spectrogram<br>
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/91064070/235926461-bc649866-ee7f-4878-b292-7f6981c8d9c9.png"/>
+</p>
 
 The features are then split in train/validation sets and saved into .npy files.
 
@@ -62,8 +64,9 @@ We made a custom class with [keras-tuner](https://keras.io/keras_tuner/) to find
   </div>
 
 Matrix confusion of the results of a CNN model trained on RAVDESS, excluding singing and calm emotions:
-
+<p align="center">
 <img src="https://user-images.githubusercontent.com/91064070/235926494-c18e0165-1f09-4049-888f-88b4ff37bba3.png"/>
+</p>
 
 <div align="center">
   <center><h2>How to use it</h2></center>
