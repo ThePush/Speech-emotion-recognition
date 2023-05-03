@@ -55,9 +55,9 @@ Several models were tried, replicating the ones we found in the literature. The 
 The models are composed of 5 to 8 convolutional layers, followed by Batch Normalization and max pooling at some points, according to the paper they were based on.<br>
 The output is then flattened and fed to a dense layer. The output of the dense layer is then fed to a softmax layer with the number of emotions as output.<br>
 The hybrid model adds 2 LSTM layers between the convolutional layers and the dense layer.<br>
-You can check some of the models in the `/models/model_plot` folder.
+You can check some of the models in the `/models/model_plot` folder. Two of them are saved and ready to be trained in the ```/model_training/train.py``` file.
 
-We made a custom class with [keras-tuner](https://keras.io/keras_tuner/) to find the best hyperparameters for the CNN model. You can find it in the `/model_training/CNNHypermodel.py` file.
+We also made a custom class with [keras-tuner](https://keras.io/keras_tuner/) to find the best hyperparameters for the CNN model. You can find it in the `/model_training/CNNHypermodel.py` file. It is used in the ```/model_training/HM_train.py``` file.
 
 <div align="center">
   <center><h2>Results</h2></center>
