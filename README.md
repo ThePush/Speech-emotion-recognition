@@ -7,7 +7,7 @@
   </div>
 
 -   Audio signal analysis through CNN/LSTM models
--   A script using a pre-trained transformer model with a speech to text library
+-   An alternative solution with a script using a speech to text library and a pre-trained transformer model
 <br>
 
 <div align="center">
@@ -99,7 +99,7 @@ $> python3 stats.py <model>
 ```
 
 <div align="left">
-  <left><h3>Tools</h3></left>
+  <left><h3>Data extraction tools</h3></left>
   </div>
 
 -   youtube_to_wav.py: download a youtube video and convert it to wav
