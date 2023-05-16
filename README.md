@@ -110,6 +110,7 @@ $> python3 stats.py <model>
 <br>
 
 <div align="center">
+  <hr style="border:2px solid gray">
   <center><h1>Speech to text (transformers model) with 🤗</h1></center>
   </div>
 
